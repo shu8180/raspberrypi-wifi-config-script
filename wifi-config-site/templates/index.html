@@ -1,0 +1,32 @@
+<!-- index.html -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>WiFi config</title>
+        <script type=text/javascript src="{{ url_for('static', filename='script.js') }}"></script>
+    </head>
+    <body>
+        <h1 style="font-size:100%">WiFi config</h1>
+        <div>
+            <label for="ssid_input"> SSID:</label>
+            <input type="text" id="ssid_input" />
+            <span></span>
+        </div>
+        <div>
+            <label for="password_input"> PASS:</label>
+            <input type="text" id="password_input" />
+            <span></span>
+        </div>
+        <div>
+            <input type="submit" id="submit_save_reboot" value="保存＆再起動" />
+            <input type="submit" id="submit_nosave_reboot" value="保存しない＆再起動" />
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="previous_ip"> 前回のIPアドレス:</label>
+            <label id="previous_ip" ></label>
+            <span></span>
+        </div>
+    </body>
+</html>

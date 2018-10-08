@@ -1,0 +1,9 @@
+[Unit]
+Description=Wifi config Button service
+
+[Service]
+WorkingDirectory=/home/pi/raspberrypi-wifi-config-script
+ExecStart=/usr/bin/python /home/pi/raspberrypi-wifi-config-script/wifi-config-button.py
+
+[Install]
+WantedBy = multi-user.target
